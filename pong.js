@@ -1,7 +1,7 @@
 const canvas = document.getElementsById("pong");
 const context = canvas.getContext("2d"); //Methods and Properties
 
-//Drawing the Box
+//Drawing the Rectangle
     function drawRect(x,y,w,h,color){
     context.fillStyle="black";
     context.fillRect(100,200,50,75); //x-axis, y-axis, height and width
@@ -20,3 +20,12 @@ function drawText(text,x,y,color){
     context.font="75px fantasy";
     context.fillText(text,x,y);
 }
+
+//Moving the Rectangle
+let rectX=0;
+function render(){
+    drawRect( 0, 0, 600, 400,"black");
+    drawRect( rectX, 100, 100, 100,"red");
+    rectX = rectX+100;
+}
+setInterval(render,1000);
