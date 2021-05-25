@@ -2,13 +2,33 @@
 const canvas = document.getElementsById("pong");
 const context = canvas.getContext("2d"); //Methods and Properties
 
+//User Paddle
+const user ={
+    x:0,
+    y:csv.height/2 -100/2,
+    width:10,
+    height:100,
+    color:"WHITE",
+    score:0
+}
+
+//Create the Ball
+const ball={
+    x:csv.width/2,
+    y:csv.height/2,
+    radius: 10,
+    speed:5,
+    velocityX:5,
+    velocityY:5,
+    color:"WHITE"
+}
 //Drawing the Rectangle
     function drawRect(x,y,w,h,color){
     context.fillStyle=color;
     context.fillRect(x,y,w,h); //x-axis, y-axis, width and height
 }
 
-drawRect(0,0,cvs.width,csv.height,"BLACK");
+
 
 //Drawing the Circle
     function drawCircle(x,y,r,color){
@@ -28,6 +48,10 @@ function drawText(){
 }
 
 drawText("something",300,200,"WHITE");
+
+function render(){
+    drawRect(0,0,cvs.width,csv.height,"BLACK");
+}
 
 //Moving the Rectangle
 let rectX=0;
