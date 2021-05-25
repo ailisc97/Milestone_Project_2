@@ -1,90 +1,43 @@
-//Selecting the Canvas
-const csv = document.getElementsById("pong");
-const ctx= csv.getContext("2d"); //Methods and Properties
-
-//User Paddle
-const user ={
-    x:0,
-    y:csv.height/2 -100/2,
-    width:10,
-    height:100,
-    color:"WHITE",
-    score:0
-}
-
-//Create the Ball
-const ball={
-    x:csv.width/2,
-    y:csv.height/2,
-    radius: 10,
-    speed:5,
-    velocityX:5,
-    velocityY:5,
-    color:"WHITE"
-}
-//Drawing the Rectangle
-    function drawRect(x,y,w,h,color){
-    context.fillStyle=color;
-    context.fillRect(x,y,w,h); //x-axis, y-axis, width and height
-}
-
-//Create the Net
-const net ={
-    x: csv.width -1,
-    y:0,
-    width=2,
-    height=10,
-    color="WHITE",
-}
-//Draw the Net
-function drawNet(){
-    for(let i=0; i<=csv.height;i+=15){
-        drawRect(net.x, net.y + i, net.width, net.height,net.color);
+class Vec
+{
+    constructor(x = 0, y = 0)
+    {
+        this.x = x;
+        this.y = y;
+    }
+    get len()
+    {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+    }
+    set len(value) {
+        const f = value / this.len;
+        this.x *= f;
+        this.y *= f;
     }
 }
 
-
-//Drawing the Circle
-    function drawCircle(x,y,r,color){
-    context.fillStyle=color;
-    context.beginPath();
-    context.arc (300,350,100,0,Math.PI*2,false );//x position, y position, radius, Start Angle,End angle(360), direction (clockwise)
-    context.closePath();
+class Rect
+{
+    constructor(x = 0, y = 0)
+    {
+        this.pos = new Vec(0, 0);
+        this.size = new Vec(x, y);
+    }
+    get left()
+    {
+        return this.pos.x - this.size.x / 2;
+    }
+    get right()
+    {
+        return this.pos.x + this.size.x / 2;
+    }
+    get top()
+    {
+        return this.pos.y - this.size.y / 2;
+    }
+    get bottom()
+    {
+        return this.pos.y + this.size.y / 2;
+    }
 }
 
-drawCircle(100,100,50, "WHITE");
-
-//Drawing Text
-function drawText(){
-    context.fillStyle=color;
-    context.font="45px fantasy";
-    context.fillText(text,x,y);
-}
-
-drawText("something",300,200,"WHITE");
-
-function render(){
-    //Clear the Canvas
-    drawRect(0,0,cvs.width,csv.height,"BLACK");
-    //Draw the Net
-    drawNet();
-    //Draw the Score
-    drawText(user.score,cvs.width/4, cvs.height/5,"WHITE");
-    drawText(com.score,3*cvs.width/4, cvs.height/5,"WHITE");
-    //Draw the Paddle
-    drawRect(user.x,user.y,user.width,user.height, user.color);
-    drawRect(com.x,com.y,com.width,com.height, com.color);
-    //Drawing the Ball
-    drawCircle(ball.x,ball.y,ball.radius,ball.color);
-}
-
-//Moving the Rectangle
-
-
-//Game init
-function game(){
-    render();
-}
-//loop
-const framePerSecond=50;
-setInterval(game,1000/framePerSecond)
