@@ -29,3 +29,17 @@ function render(){
     rectX = rectX+100;
 }
 setInterval(render,1000);
+
+//Drawing the Net
+const net ={
+    x: canvas.width/2 -2/2,
+    y:0,
+    width=2,
+    height=10,
+    color="white",
+}
+function drawNet(){
+    for(let i=0; i<=canvas.height;i+=15){
+        drawRect(net.x, net.y + i, net.width, net.height,net.color);
+    }
+}
