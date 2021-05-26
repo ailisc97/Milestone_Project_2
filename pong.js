@@ -1,4 +1,4 @@
-class Vec
+class Vector
 {
     constructor(x = 0, y = 0)
     {
@@ -16,12 +16,12 @@ class Vec
     }
 }
 
-class Rect
+class Rectangle
 {
     constructor(x = 0, y = 0)
     {
-        this.pos = new Vec(0, 0);
-        this.size = new Vec(x, y);
+        this.pos = new Vector(0, 0);
+        this.size = new Vector(x, y);
     }
     get left()
     {
@@ -41,3 +41,28 @@ class Rect
     }
 }
 
+class Ball extends Rectangle
+{
+    constructor()
+    {
+        super(10, 10);
+        this.vel = new Vector;
+    }
+}
+
+class User extends Rectangle
+{
+    constructor()
+    {
+        super(20, 100);
+        this.vel = new Vector;
+        this.score = 0;
+
+        this._lastPos = new Vector;
+    }
+    update(dt)
+    {
+        this.vel.y = (this.pos.y - this._lastPos.y) / dt;
+        this._lastPos.y = this.pos.y;
+    }
+}
