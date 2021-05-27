@@ -2,7 +2,7 @@ function sendMail(resultForm) {
     emailjs.send("service_dmqixxl", "template_kc5b6ij", {
         "from_name": resultForm.name.value,
         "from_email": resultForm.emailaddress.value,
-        "Score": resultForm.score.value
+        "score": resultForm.score.value
     })
     .then(
         function(response) {
