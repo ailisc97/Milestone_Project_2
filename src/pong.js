@@ -126,4 +126,32 @@ class Pong
 
         this.reset();
     }
-    
+    clear()
+    {
+        this._context.fillStyle = '#000';
+        this._context.fillRect(0, 0, this._canvas.width, this._canvas.height);
+    }
+    collide(player, ball)
+    {
+        if (player.left < ball.right && player.right > ball.left &&
+            player.top < ball.bottom && player.bottom > ball.top) {
+            ball.vel.x = -ball.vel.x * 1.05;
+            const len = ball.vel.len;
+            ball.vel.y += player.vel.y * .2;
+            ball.vel.len = len;
+        }
+    }
+    draw()
+    {
+        this.clear();
+
+        this.drawRect(this.ball);
+        this.players.forEach(player => this.drawRect(player));
+
+        this.drawScore();
+    }
+    drawRect(rect)
+    {
+        this._context.fillStyle = '#fff';
+        this._context.fillRect(rect.left, rect.top, rect.size.x, rect.size.y);
+    }
