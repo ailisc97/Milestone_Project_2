@@ -1,8 +1,8 @@
-function sendMail(resultForm) {
+function sendMail(contactForm) {
     emailjs.send("service_dmqixxl", "template_kc5b6ij", {
-        "from_name": resultForm.name.value,
-        "from_email": resultForm.emailaddress.value,
-        "score": resultForm.score.value
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "score": contactForm.score.value
     })
     .then(
         function(response) {
@@ -14,3 +14,4 @@ function sendMail(resultForm) {
     );
     return false;  // To block from loading a new page
 }
+  

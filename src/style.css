@@ -1,35 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+
+
+.contact{
+    background-color: rgba(19, 207, 104, 0.4);
+    border-radius: 5%;
+    padding: 2rem;
+    margin: 1rem;
+    
+} 
+
+h5,h3 .contact{
+    text-align: center;
 }
 
 
-.center-form {
-    padding-top: 50px;
-    padding-left:50px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #3be810;
-    color: #fafafa;
-}
-
-/*Footer*/
 .footer {
     flex-shrink: 0;
-    background-color: #736f72;
+    background-color: #59a73a;
 }
 
+
 .fab:hover {
-    color: #42033D;
+    color: #1d9677;
 }
+
+
+
 .social-links {
     font-size: 3rem;
     padding: 2rem;
@@ -45,6 +41,8 @@ button[type="submit"] {
 .social-links a {
     padding: 0 .3rem;
 }
+
+
 @media (min-width: 992px) {
     .social-links {
         font-size: 3rem;
