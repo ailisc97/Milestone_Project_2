@@ -1,4 +1,4 @@
-class Vec
+class VectorPosition
 {
     constructor(x = 0, y = 0)
     {
@@ -16,12 +16,12 @@ class Vec
     }
 }
 
-class Rect
+class Paddle
 {
     constructor(x = 0, y = 0)
     {
-        this.pos = new Vec(0, 0);
-        this.size = new Vec(x, y);
+        this.pos = new VectorPosition(0, 0);
+        this.size = new VectorPosition(x, y);
     }
     get left()
     {
@@ -41,28 +41,28 @@ class Rect
     }
 }
 
-class Ball extends Rect
+class Puck extends Paddle
 {
     constructor()
     {
         super(10, 10);
-        this.vel = new Vec;
+        this.vectorPosition = new VectorPosition;
     }
 }
 
-class User extends Rect
+class Player extends Paddle
 {
     constructor()
     {
         super(20, 100);
-        this.vel = new Vec;
+        this.vectorPosition = new VectorPosition;
         this.score = 0;
 
-        this._lastPos = new Vec;
+        this._lastPos = new VectorPosition;
     }
-    update(dt)
+    update(deltaTime)
     {
-        this.vel.y = (this.pos.y - this._lastPos.y) / dt;
+        this.vectorPosition.y = (this.pos.y - this._lastPos.y) / deltaTime;
         this._lastPos.y = this.pos.y;
     }
 }
@@ -76,11 +76,11 @@ class Pong
 
         this.initialSpeed = 250;
 
-        this.ball = new Ball;
+        this.ball = new Puck;
 
         this.users = [
-            new User,
-            new User,
+            new Player,
+            new Player,
         ];
 
         this.users[0].pos.x = 40;
@@ -135,22 +135,22 @@ class Pong
     {
         if (user.left < ball.right && user.right > ball.left &&
             user.top < ball.bottom && user.bottom > ball.top) {
-            ball.vel.x = -ball.vel.x * 1.05;
-            const len = ball.vel.len;
-            ball.vel.y += user.vel.y * .2;
-            ball.vel.len = len;
+            ball.vectorPosition.x = -ball.vectorPosition.x * 1.05;
+            const len = ball.vectorPosition.len;
+            ball.vectorPosition.y += user.vectorPosition.y * .2;
+            ball.vectorPosition.len = len;
         }
     }
     draw()
     {
         this.clear();
 
-        this.drawRect(this.ball);
-        this.users.forEach(user => this.drawRect(user));
+        this.drawPaddle(this.ball);
+        this.users.forEach(user => this.drawPaddle(user));
 
         this.drawScore();
     }
-    drawRect(rect)
+    drawPaddle(rect)
     {
         this._context.fillStyle = '#fff';
         this._context.fillRect(rect.left, rect.top, rect.size.x, rect.size.y);
@@ -170,17 +170,17 @@ class Pong
     play()
     {
         const b = this.ball;
-        if (b.vel.x === 0 && b.vel.y === 0) {
-            b.vel.x = 200 * (Math.random() > .5 ? 1 : -1);
-            b.vel.y = 200 * (Math.random() * 2 - 1);
-            b.vel.len = this.initialSpeed;
+        if (b.vectorPosition.x === 0 && b.vectorPosition.y === 0) {
+            b.vectorPosition.x = 200 * (Math.random() > .5 ? 1 : -1);
+            b.vectorPosition.y = 200 * (Math.random() * 2 - 1);
+            b.vectorPosition.len = this.initialSpeed;
         }
     }
     reset()
     {
         const b = this.ball;
-        b.vel.x = 0;
-        b.vel.y = 0;
+        b.vectorPosition.x = 0;
+        b.vectorPosition.y = 0;
         b.pos.x = this._canvas.width / 2;
         b.pos.y = this._canvas.height / 2;
     }
@@ -188,27 +188,27 @@ class Pong
     {
         requestAnimationFrame(this._frameCallback);
     }
-    update(dt)
+    update(deltaTime)
     {
         const cvs = this._canvas;
         const ball = this.ball;
-        ball.pos.x += ball.vel.x * dt;
-        ball.pos.y += ball.vel.y * dt;
+        ball.pos.x += ball.vectorPosition.x * deltaTime;
+        ball.pos.y += ball.vectorPosition.y * deltaTime;
 
         if (ball.right < 0 || ball.left > cvs.width) {
-            ++this.users[ball.vel.x < 0 | 0].score;
+            ++this.users[ball.vectorPosition.x < 0 | 0].score;
             this.reset();
         }
 
-        if (ball.vel.y < 0 && ball.top < 0 ||
-            ball.vel.y > 0 && ball.bottom > cvs.height) {
-            ball.vel.y = -ball.vel.y;
+        if (ball.vectorPosition.y < 0 && ball.top < 0 ||
+            ball.vectorPosition.y > 0 && ball.bottom > cvs.height) {
+            ball.vectorPosition.y = -ball.vectorPosition.y;
         }
 
         this.users[1].pos.y = ball.pos.y;
 
         this.users.forEach(user => {
-            user.update(dt);
+            user.update(deltaTime);
             this.collide(user, ball);
         });
 
