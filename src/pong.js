@@ -15,7 +15,7 @@ class VectorPosition
         this.y *= f;
     }
 }
-
+//Adding the Paddle in here
 class Paddle
 {
     constructor(x = 0, y = 0)
@@ -40,7 +40,7 @@ class Paddle
         return this.pos.y + this.size.y / 2;
     }
 }
-
+//Adding puck in here
 class Puck extends Paddle
 {
     constructor()
@@ -49,7 +49,7 @@ class Puck extends Paddle
         this.vectorPosition = new VectorPosition;
     }
 }
-
+// Player is added
 class Player extends Paddle
 {
     constructor()
@@ -66,7 +66,7 @@ class Player extends Paddle
         this._lastPos.y = this.pos.y;
     }
 }
-
+//Pong added
 class Pong
 {
     constructor(canvas)
@@ -131,7 +131,7 @@ class Pong
         this._context.fillStyle = '#000';
         this._context.fillRect(0, 0, this._canvas.width, this._canvas.height);
     }
-    collide(user, ball)
+    collide(user, ball) // This is where I believe the issue is for the ball getting stuck on the y axis, tried different number positions, but no luck.
     {
         if (user.left < ball.right && user.right > ball.left &&
             user.top < ball.bottom && user.bottom > ball.top) {

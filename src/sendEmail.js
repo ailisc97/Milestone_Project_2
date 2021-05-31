@@ -13,7 +13,7 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
         },
         function(error) {
-            // send message to front end failure - due to hamsters
+            // send message to front end failure - due lack of information
             console.log("FAILED", error);
         }
     );

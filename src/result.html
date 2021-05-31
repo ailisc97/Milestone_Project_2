@@ -14,6 +14,7 @@
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
+     <!--Script to link the EmailJs to the contact form-->
     <script type="text/javascript">
         (function () {
             emailjs.init("user_qOzp4nWOmTgwDz8wswWSF");
@@ -21,6 +22,7 @@
     </script>
 </head>
 <body>
+<!--Nav Bar-->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="index">
         <h1 class="text-light">Ping Pong Game</h1>
@@ -39,7 +41,7 @@
             </ul>
         </div>
     </nav>
-​
+​  <!--Contact Form-->
     <div class="form">
         <form class="contact" onsubmit="return sendMail(this);">
             <div>
@@ -67,6 +69,7 @@
             <small id="Help" class="form-text text-dark">*Required</small>
             <small id="Help2" class="form-text text-dark">We'll never share your details with anyone else.</small>
         </form>
+ <!--Footer-->
         <footer>
             <div class="row">
                 <div class="col-12 text-center">
@@ -89,6 +92,7 @@
             </div>
         </footer>
     </div>
+ <!--Linking the scripts to the HTML-->
     <script src="sendEmail.js"></script>
 ​
 ​
