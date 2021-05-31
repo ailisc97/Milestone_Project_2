@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-
+body {
+    align-items: center;
+    background: #202020;
+    display: flex;
+    margin: 0;
+}
+canvas {
+    border: solid 1px #fff;
+    border-left: none;
+    border-right: none;
+    image-rendering: pixelated;
+    width: 100%;
+}
 .contact{
     background-color: rgba(19, 207, 104, 0.4);
     border-radius: 5%;
