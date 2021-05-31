@@ -12,7 +12,6 @@
   * [Design](#Design)
     * [Colour Scheme](#Colour-Scheme)
     * [Typography](#Typography)
-    * [Imagery](#Imagery)
     * [Wireframes](#Wireframes)
 * [Limitations](#Limitations)
 - [Features](#Features)
@@ -32,7 +31,6 @@
     * [Locally](Run-Locally)
 * [Credits](#Credits)
   * [Content](#Content)
-  * [Media](#Media)
   * [Acknowledgements](#Acknowledgements)
   * [Comments](#Comments)
 
@@ -92,15 +90,14 @@ The contact page will allow users to tell the people who made the website what s
 
 ### Design
 #### Colour Scheme
+The background colour used is Grey as is the nav bar and the footer. The Ping Pong game has a black background and a white score, ball and paddle.
 
-![Colours](assets/images/)
-The main colour used is Grey (#grey).
+In the form page (result.html) the form it's self is a blue (#1d9677).
+
+In the footer all components are a navy blue (#072bf7) and when hovered over the media links and phone and email number it is the same colour as the form (#1d9677).
 
 ####  Typography
 The font on the website is **Roboto**. This font was off Google Fonts.
-
-#### Imagery
-
 
 #### Wireframes
 Home Page-Desktop<br>
@@ -110,17 +107,21 @@ Home Page-Desktop<br>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ### Limitations
+The biggest limitation I faced is that when playing the Pong game the ball seems to get stuck on the computer paddle. This is most likely something to do with the y-axis positioning. I did play around with this but I had no luck. Once this happens the game can be restarted by hitting the refresh button on the browser.
 
+Another limitation I faced is that then the page is in the browser you can to select the src folder, then the game and the pages work.
+
+A small limitation was getting a net on the game to work, it was more of a cosmetic choice that I could have liked to have.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ## Features
  
 ### Existing Features
-
+The Nav bar, footer and form were all from Bootstrap.
 
 ### Features Left to Implement
-
+If I could have fixed the issue with the ball getting stuck in the paddle, as mentioned in the limitation section, that would have been most important to next implement.
 
 ## Technologies
   
@@ -128,6 +129,8 @@ Home Page-Desktop<br>
 	* This project uses HTML as the main language used for the Website.
 * CSS
 	* This project uses CSS to style the Website.
+* JavaScript
+    * This project uses JS to have the game being able to function and the sendEmail which sends me an email when someone clicks  submit on the form.
 * [Bootstrap](https://getbootstrap.com/)
 	* The Bootstrap framework is used for Navigation bar, the carousel and the contact us form.
 * [Font Awesome](https://fontawesome.com/)
@@ -137,19 +140,11 @@ Home Page-Desktop<br>
 * [GitPod](https://www.gitpod.io/)
     *GitPod is used to develop the website and where the code for the website was wrote.
 * [GitHub](https://github.com/)
-	* GithHub is the site used to store the code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+	* GitHub is the site used to store the code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
 * [Git](https://git-scm.com/)
 	* Git is used as software to commit and push code to the GitHub repository where the source code is stored.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 	* Google chromes built in developer tools are used to inspect page elements in various different sized. It also helped debug issues and test different CSS styles.
-* [Balsamiq Wireframes](https://balsamiq.com/wireframes/)
-	* This was used to create desktop and phone wireframes for UX design.
-* [Coolors](https://coolors.co/)
-    *This was used to create a colour scheme that works well together.
-* [Hex to RGB](https://www.rgbtohex.net/hextorgb/)
-    *This was used to get the colours from HEX to RGBA. 
-* [Unsplash](https://unsplash.com/)
-    *This website was used to get the pictures on the website.
 * [Techsini](http://techsini.com/multi-mockup/index.php)
     * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README
 
@@ -190,12 +185,12 @@ CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css
 ### Project Creation
 I created a repository in Github and called it Milestone_Project 2, I selected to add a README into the project. When I went into the repository, I clicked the GitPod button on the top right and that opened GitPod for me. I used Git to add, commit and push all my saved work from GitPod.
 
-*git add . -This would add all the work from the different pages to the GitHub.
-*git add index.html -Would only save the work from Index.html
-*git pull - This would pull the GitHub version of my project.
-*git commit -m "MESSAGE" - This would commit the added work from git add . and leave a message beside it.
-*git push- This pushed the added work to GitHub
-*python3 -m http.server - This opened the website on the right hand side of the page.
+* git add . -This would add all the work from the different pages to the GitHub.
+* git add index.html -Would only save the work from Index.html
+* git pull - This would pull the GitHub version of my project.
+* git commit -m "MESSAGE" - This would commit the added work from git add . and leave a message beside it.
+* git push- This pushed the added work to GitHub
+* python3 -m http.server - This opened the website on the right hand side of the page.
 
 ### Using Github Pages
 1. On the GitHub [Repository:](https://github.com/ailisc97/Milestone_Project_2.git)
@@ -217,12 +212,29 @@ I created a repository in Github and called it Milestone_Project 2, I selected t
 ## Credits
 
 ### Code
-Code for the Navigation bar and the contact us form. was taken from [Bootstrap](https://getbootstrap.com/).
+Code for the Navigation bar, form and the contact us form. was taken from [Bootstrap](https://getbootstrap.com/).
+
+I took insperation from different youtube videos and webpages that discribed what needed to be done for the Ping Pong Game.
+[YouTube](https://www.youtube.com/watch?v=3UjU7r5qOxY).
+[YouTube](https://www.youtube.com/watch?v=nl0KXCa5pJk)
+[YouTube](https://www.youtube.com/watch?v=x3Z4nLs7bnw)
+[YouTube](https://www.youtube.com/watch?v=ju09womACpQ)
+[YouTube](https://www.youtube.com/watch?v=nl0KXCa5pJk&list=RDCMUC8n8ftV94ZU_DJLOLtrpORA&start_radio=1&t=2790s)
+[YouTube](https://www.youtube.com/watch?v=IIrC5Qcb2G4)
+[YouTube](https://www.youtube.com/watch?v=m6H6SHIdAhQ)
+[Webpage](https://thecodingpie.com/post/learn-to-code-ping-pong-game-using-javascript-and-html5)
+[Webpage](https://codepen.io/gdube/pen/JybxxZ)
+[Webpage](https://kellylougheed.medium.com/javascript-pong-with-p5-js-3ae1b859418c)
+
+One page linked below is the YouTube video, which helped me with the sendEmail.js
+[YouTube](https://www.youtube.com/watch?v=NgWGllOjkbs)
 ### Content
 Content was created by Ailis Curran.
-### Media
 
 ### Acknowledgements
-I would like to thank my mentor Spencer Barriball for all his help throughout the project. <br>
-###Comments
-README.md insperation was taken from Daisy Mc Girr. It gave me a template to complete my README, all README content is my own.
+I would like to thank my mentor Spencer Barriball for all his help throughout the project.
+
+### Comments
+README.md insperation was taken from my previous Milestone Project. It gave me a template to complete my README, all README content is my own.
+
+When loading the page from the browser please select the src folder and then the pages will load correctly. 
