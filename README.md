@@ -38,15 +38,15 @@
 
 
 ## Purpose
+This website was created for Milestone Project 2 in the Software Development Course for Code Insitute. The languages used in the project are the languages which have been thought in the course up until now, which include, HTML, CSS, JS, User Centric Design and Interactive Front End Development.
 
-
-The live website can be found [here](http)
+The live website can be found [here](https://github.com/ailisc97/Milestone_Project_2.git)
 
 ## Ping Pong Game Responsive Website
 
 ![Website Mock Up] (assets/images/)
 
-
+Ping Pong Game is based on the popular, and one of the first video games ever created, Pong. Pong was developed in 1972 with the game simulating a Ping Pong Game. User goes up against the computer and is a two dimensional graphic game. Another element of this website is the Contact Form which incorporates the use of EmailJS which is another JavaScript component which I've learned on the course. It gives the user a chance to show off their top score in the hopes to win stickers of the popular game, Pong.
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -54,23 +54,47 @@ The live website can be found [here](http)
 
 ### User stories
 #### First Time Visitor Goals
-* As a First Time user, 
+* As a First Time user,I want to easily and quickly navigate the website to play the Pong Game.
+* As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores.
+* As a First Time user, I want to access the Social Media links.
+* As a First Time user, I want to where the website was made.
+
 #### Returning Visitor Goals
-* As a Returning user, 
+* As a Returning User, I want to know how to contact the makers of the game.
+* As a Returning user, I want to keep inputting my scores into the form, to recieve stickers.
+
 #### Frequent Visitor Goals
-* As a Frequent user,
+* As a Frequent user, I want to get better and better at playing the game so my score can increase. 
+* As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers.
 
 ### Structure
 All Pages will have a Navigation bar (using Bootstrap) at the top of the Webpage that allows the User to easily navigate between the different pages of the site.
-The Navigation bar is collapsable into a hamburger menu on a Mobile device, this will help maximise the space.
 The purpose of this is to fulfill user story:
-> As a First Time user, I want to view the website and content clearly on my mobile device.
+> As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores.
+
+The Home Page will contain the Ping Pong Game. The purpose of this is to fulfill user story:
+> As a First Time user,I want to easily and quickly navigate the website to play the Pong Game.
+> As a Frequent user, I want to get better and better at playing the game so my score can increase.
+
+In the Footer there will be links to find the Social Media pages.
+> As a First Time user, I want to access the Social Media links.
+
+The Footer will also inform the user when and where the website was made.
+>As a First Time user, I want to where the website was made.
+
+The Footer will have contact information for the user to get in touch with the game developers.
+> As a Returning User, I want to know how to contact the makers of the game.
+
+The contact page will allow users to tell the people who made the website what score they got, and if they are in with a chance of winning sticker.
+> As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores.
+> As a Returning user, I want to keep inputting my scores into the form, to recieve stickers.
+> As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers.
 
 ### Design
 #### Colour Scheme
 
 ![Colours](assets/images/)
-The main colour used is Grey (#73BA9B).
+The main colour used is Grey (#grey).
 
 ####  Typography
 The font on the website is **Roboto**. This font was off Google Fonts.
