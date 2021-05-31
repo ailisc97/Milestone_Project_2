@@ -113,6 +113,8 @@ Another limitation I faced is that then the page is in the browser you can to se
 
 A small limitation was getting a net on the game to work, it was more of a cosmetic choice that I could have liked to have.
 
+In the Form on result.html the details that are put into the form dont automatically delete. There is also no way to see if the email was sent out, no confirmation. 
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ## Features
