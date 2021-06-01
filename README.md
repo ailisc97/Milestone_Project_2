@@ -165,13 +165,15 @@ The live Project can be found [here](https://github.com/ailisc97/Milestone_Proje
 ![Test Cases](assets/images/)
 
 #### Out of Scope  
-* There is no way to save forms.
+* There is no way to save forms - forms come via email.
 
 ### Test Results
 Testing results can be found [here](assets/images/)<br>
 This results are a .xlsx file and will need excel to open. <br>
 All Pages were run through the [W3C HTML Validator](https://validator.w3.org/), there was no errors.<br>
-CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri),there was no errors.<br>
+CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri),there was no errors.
+JS Page was ran through [JShint](https://jshint.com/)
+<br>
 
 * As a First Time user,
 
