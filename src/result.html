@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ping Pong Results</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
 ​
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript"
+    <script 
             src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
      <!--Script to link the EmailJs to the contact form-->
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init("user_qOzp4nWOmTgwDz8wswWSF");
         })();
@@ -41,6 +41,7 @@
             </ul>
         </div>
     </nav>
+
 ​  <!--Contact Form-->
     <div class="form">
         <form class="contact" onsubmit="return sendMail(this);">
@@ -53,7 +54,7 @@
             <div class="form-group">
                 <label for="full_name">Full Name*</label>
                 <input type="text" class="form-control" id="full_name" placeholder="Please enter your full name"
-                       name="full_name"required/>
+                       name="full_name" required/>
             </div>
             <div class="form-group">
                 <label for="the_email">Email address*</label>
@@ -62,7 +63,7 @@
             </div>
             <br>
             <div class="form-group">
-                <label for="score">What was your score against the computer?</label>
+                <label for="score">What was your score against the computer?*</label>
                 <textarea class="form-control" id="score" rows="3" name="score"></textarea>
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
@@ -105,5 +106,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
