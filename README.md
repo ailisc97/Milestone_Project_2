@@ -38,11 +38,11 @@
 ## Purpose
 This website was created for Milestone Project 2 in the Software Development Course for Code Insitute. The languages used in the project are the languages which have been thought in the course up until now, which include, HTML, CSS, JS, User Centric Design and Interactive Front End Development.
 
-The live website can be found [here](https://github.com/ailisc97/Milestone_Project_2.git)
+The live website can be found [here](https://ailisc97.github.io/Milestone_Project_2/)
 
 ## Ping Pong Game Responsive Website
 
-![Website Mock Up] (assets/images/)
+![Website Mock Up] (assets/images/Capture.PNG)
 
 Ping Pong Game is based on the popular, and one of the first video games ever created, Pong. Pong was developed in 1972 with the game simulating a Ping Pong Game. User goes up against the computer and is a two dimensional graphic game. Another element of this website is the Contact Form which incorporates the use of EmailJS which is another JavaScript component which I've learned on the course. It gives the user a chance to show off their top score in the hopes to win stickers of the popular game, Pong.
 
@@ -62,8 +62,9 @@ Ping Pong Game is based on the popular, and one of the first video games ever cr
 * As a Returning user, I want to keep inputting my scores into the form, to recieve stickers.
 
 #### Frequent Visitor Goals
-* As a Frequent user, I want to get better and better at playing the game so my score can increase. 
+* As a Frequent user, I want to get better and better at playing the game so my score can increase.
 * As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers.
+
 
 ### Structure
 All Pages will have a Navigation bar (using Bootstrap) at the top of the Webpage that allows the User to easily navigate between the different pages of the site.
@@ -109,8 +110,6 @@ Home Page-Desktop<br>
 ### Limitations
 The biggest limitation I faced is that when playing the Pong game the ball seems to get stuck on the computer paddle. This is most likely something to do with the y-axis positioning. I did play around with this but I had no luck. Once this happens the game can be restarted by hitting the refresh button on the browser.
 
-Another limitation I faced is that then the page is in the browser you can to select the src folder, then the game and the pages work.
-
 A small limitation was getting a net on the game to work, it was more of a cosmetic choice that I could have liked to have.
 
 In the Form on result.html the details that are put into the form dont automatically delete. There is also no way to see if the email was sent out, no confirmation. 
@@ -149,6 +148,12 @@ If I could have fixed the issue with the ball getting stuck in the paddle, as me
 	* Google chromes built in developer tools are used to inspect page elements in various different sized. It also helped debug issues and test different CSS styles.
 * [Techsini](http://techsini.com/multi-mockup/index.php)
     * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README
+* [HTML Checker](https://validator.w3.org/nu/)
+    * HTML Chacker is an important website to make sure there are no errors in the HTML code.
+* [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+    * HTML Chacker is an important website to make sure there are no errors in the CSS code.
+* [JSHint](https://jshint.com/)
+    * HTML Chacker is an important website to make sure there are no errors in the JS code.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ## Testing
@@ -160,7 +165,7 @@ If I could have fixed the issue with the ball getting stuck in the paddle, as me
 Testing is required on Milestone Project 2.
 
 
-The live Project can be found [here](https://github.com/ailisc97/Milestone_Project_2.git).</br>
+The live Project can be found [here](https://ailisc97.github.io/Milestone_Project_2/).</br>
 #### High Level Test Cases 
 ![Test Cases](assets/images/)
 
@@ -172,14 +177,19 @@ Testing results can be found [here](assets/images/)<br>
 This results are a .xlsx file and will need excel to open. <br>
 All Pages were run through the [W3C HTML Validator](https://validator.w3.org/), there was no errors.<br>
 CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri),there was no errors.
-JS Page was ran through [JShint](https://jshint.com/)
+JS Page was ran through [JShint](https://jshint.com/), there was no errors.
 <br>
 
-* As a First Time user,
+* As a First Time user,I want to easily and quickly navigate the website to play the Pong Game.
+* As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores.
+* As a First Time user, I want to access the Social Media links.
+* As a First Time user, I want to where the website was made.
 
-* As a Returning user, 
+* As a Returning User, I want to know how to contact the makers of the game.
+* As a Returning user, I want to keep inputting my scores into the form, to recieve stickers.
 
-* As a Frequent user, 
+* As a Frequent user, I want to get better and better at playing the game so my score can increase.
+* As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers.
 
 ### Issues and Resolutions to issues found during testing
 
@@ -218,20 +228,23 @@ I created a repository in Github and called it Milestone_Project 2, I selected t
 ### Code
 Code for the Navigation bar, form and the contact us form. was taken from [Bootstrap](https://getbootstrap.com/).
 
-I took insperation from different youtube videos and webpages that discribed what needed to be done for the Ping Pong Game.
-[YouTube](https://www.youtube.com/watch?v=3UjU7r5qOxY).
-[YouTube](https://www.youtube.com/watch?v=nl0KXCa5pJk)
-[YouTube](https://www.youtube.com/watch?v=x3Z4nLs7bnw)
-[YouTube](https://www.youtube.com/watch?v=ju09womACpQ)
-[YouTube](https://www.youtube.com/watch?v=nl0KXCa5pJk&list=RDCMUC8n8ftV94ZU_DJLOLtrpORA&start_radio=1&t=2790s)
-[YouTube](https://www.youtube.com/watch?v=IIrC5Qcb2G4)
-[YouTube](https://www.youtube.com/watch?v=m6H6SHIdAhQ)
-[Webpage](https://thecodingpie.com/post/learn-to-code-ping-pong-game-using-javascript-and-html5)
-[Webpage](https://codepen.io/gdube/pen/JybxxZ)
-[Webpage](https://kellylougheed.medium.com/javascript-pong-with-p5-js-3ae1b859418c)
+I took insperation from different youtube videos and webpages that discribed what needed to be done for the Ping Pong Game. <br>
 
-One page linked below is the YouTube video, which helped me with the sendEmail.js
-[YouTube](https://www.youtube.com/watch?v=NgWGllOjkbs)
+* [YouTube-Create a Ping Pong Game using JavaScript JavaScript For Beginners | Great Learning Academy](https://www.youtube.com/watch?v=3UjU7r5qOxY). 
+* [YouTube-Code Ping Pong Game Using JavaScript and HTML5](https://www.youtube.com/watch?v=nl0KXCa5pJk)
+* [YouTube-Build a Ping Pong Game with Javascript in 24 Minutes](https://www.youtube.com/watch?v=x3Z4nLs7bnw)
+* [YouTube-Pong in JavaScript (using ES6)](https://www.youtube.com/watch?v=ju09womACpQ)
+* [YouTube-Code Ping Pong Game Using JavaScript and HTML5](https://www.youtube.com/watch?v=nl0KXCa5pJk&list=RDCMUC8n8ftV94ZU_DJLOLtrpORA&start_radio=1&t=2790s)
+* [YouTube-Coding Challenge #67: Pong!](https://www.youtube.com/watch?v=IIrC5Qcb2G4)
+* [YouTube-Let's make Pong! (tutorial for beginners) #1 - p5js](https://www.youtube.com/watch?v=m6H6SHIdAhQ)
+* [YouTube-Let's make Pong! (tutorial for beginners) #2 - p5js](https://www.youtube.com/watch?v=ag-v4Pdtu-8)
+* [YouTube-Let's make Pong! (tutorial for beginners) #3 - p5js](https://www.youtube.com/watch?v=_PApbz7g6ms)
+* [Webpage-Learn to Code Ping Pong Game using Javascript and HTML5](https://thecodingpie.com/post/learn-to-code-ping-pong-game-using-javascript-and-html5)
+* [Webpage-Pong game with JavaScript](https://codepen.io/gdube/pen/JybxxZ)
+* [Webpage-JavaScript Pong with p5.js](https://kellylougheed.medium.com/javascript-pong-with-p5-js-3ae1b859418c)
+
+One page linked below is the YouTube video, which helped me with the sendEmail.js 
+* [YouTube-How to send emails using React through EmailJs](https://www.youtube.com/watch?v=NgWGllOjkbs)
 ### Content
 Content was created by Ailis Curran.
 
@@ -240,5 +253,4 @@ I would like to thank my mentor Spencer Barriball for all his help throughout th
 
 ### Comments
 README.md insperation was taken from my previous Milestone Project. It gave me a template to complete my README, all README content is my own.
-
-When loading the page from the browser please select the src folder and then the pages will load correctly. 
+ 
