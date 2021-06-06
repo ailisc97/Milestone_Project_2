@@ -101,8 +101,8 @@ In the footer all components are a navy blue (#072bf7) and when hovered over the
 The font on the website is **Roboto**. This font was off Google Fonts.
 
 #### Wireframes
-Home Page-Desktop<br>
-![Home Page Wireframe](asssets/)
+Index.html page and Result.html page<br>
+![Wireframe](asssets/images/WireFrames.jpg)
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
