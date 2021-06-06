@@ -42,7 +42,7 @@ The live website can be found [here](https://ailisc97.github.io/Milestone_Projec
 
 ## Ping Pong Game Responsive Website
 
-![Website Mock Up] (assets/images/Capture.PNG)
+![Website Mockup](assets/images/Capture.PNG)
 
 Ping Pong Game is based on the popular, and one of the first video games ever created, Pong. Pong was developed in 1972 with the game simulating a Ping Pong Game. User goes up against the computer and is a two dimensional graphic game. Another element of this website is the Contact Form which incorporates the use of EmailJS which is another JavaScript component which I've learned on the course. It gives the user a chance to show off their top score in the hopes to win stickers of the popular game, Pong.
 
