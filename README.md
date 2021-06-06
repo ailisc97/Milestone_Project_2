@@ -162,10 +162,22 @@ If I could have fixed the issue with the ball getting stuck in the paddle, as me
 
 #### Summary 
 
-Testing is required on Milestone Project 2.
+Testing is required on Milestone Project 2, Ping Pong Game for Interactive Frontend Development.
+
+The testing performed will be on the visual effects and layout of the Website. Testing to be done on Google Chrome web browser. Testing on the game will be letting the computer win and getting the user to win.The game should be fully responsive.
+
+
+In the Navigation bar the links should take the user to the correct html page. The Home page will be redirected to index.html.
+
+On the Results.html page the form must not be submitted until the required information is inputted into the fields. And an email should be recieved to my personal gamil account. The email template is as seen below.
+
+![Email](asssets/images/EmailTemplate.PNG)
+
+Validation of inclusion for all features included in the Structure of the Website / Wireframes must be performed.
 
 
 The live Project can be found [here](https://ailisc97.github.io/Milestone_Project_2/).</br>
+
 #### High Level Test Cases 
 ![Test Cases](assets/images/HighLevelTest.PNG)
 
@@ -173,7 +185,7 @@ The live Project can be found [here](https://ailisc97.github.io/Milestone_Projec
 * There is no way to save forms - forms come via email.
 
 ### Test Results
-Testing results can be found [here](assets/images/)<br>
+Testing results can be found [here](assets/images/TestCases.xlsx)<br>
 This results are a .xlsx file and will need excel to open. <br>
 All Pages were run through the [W3C HTML Validator](https://validator.w3.org/), there was no errors.<br>
 CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri),there was no errors.
