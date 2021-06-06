@@ -180,18 +180,21 @@ CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css
 JS Page was ran through [JShint](https://jshint.com/), there was no errors.
 <br>
 
-* As a First Time user,I want to easily and quickly navigate the website to play the Pong Game.
-* As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores.
-* As a First Time user, I want to access the Social Media links.
-* As a First Time user, I want to where the website was made.
+* As a First Time user,I want to easily and quickly navigate the website to play the Pong Game. -Testing was complete. It was easy and quick to navigate. The game is successful, until it reaches a bug on the computers ball where the paddle gets 'stuck'.
+* As a First Time user, I want to easily and quickly navigate the website to send my Ping Pong Scores. -Testing was complete. It was easy to navigate to send my scores off.
+* As a First Time user, I want to access the Social Media links. -Testing was complete. The user could access all the correct social media links.
+* As a First Time user, I want to where the website was made. -Testing was complete. The user could see where the website was made in the footer.
 
-* As a Returning User, I want to know how to contact the makers of the game.
-* As a Returning user, I want to keep inputting my scores into the form, to recieve stickers.
+* As a Returning User, I want to know how to contact the makers of the game. -Testing was complete. The user can contact the makers of the game by seeing their information in the footer.
+* As a Returning user, I want to keep inputting my scores into the form, to recieve stickers. -Testing was complete. The form allows you to send your scores off more then once. The form just needs to be cleared everything before inputting the new information, which is send to me via email.
 
-* As a Frequent user, I want to get better and better at playing the game so my score can increase.
-* As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers.
+* As a Frequent user, I want to get better and better at playing the game so my score can increase. -Testing was complete. The user can get better and better at the game with more practice. 
+* As a Frequent user, I want to keep inputting my scores into the form, to recieve stickers. -Testing was complete. The user can send off more then just one score and the user will be contacted if their score is high enough to win the stickers, as all the relivent contact details have been required and sent on.
 
 ### Issues and Resolutions to issues found during testing
+The website is not mobile first and when the page is put into a mobile first device using google inspect the game is laggy and doesnt work.
+
+Another issue is that the form doesnt auto clear. 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ## Deployment
