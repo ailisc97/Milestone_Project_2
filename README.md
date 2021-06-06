@@ -167,7 +167,7 @@ Testing is required on Milestone Project 2.
 
 The live Project can be found [here](https://ailisc97.github.io/Milestone_Project_2/).</br>
 #### High Level Test Cases 
-![Test Cases](assets/images/)
+![Test Cases](assets/images/HighLevelTest.PNG)
 
 #### Out of Scope  
 * There is no way to save forms - forms come via email.
