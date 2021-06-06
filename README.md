@@ -102,9 +102,7 @@ The font on the website is **Roboto**. This font was off Google Fonts.
 
 #### Wireframes
 Index.html page and Result.html page<br>
-![Wireframe](asssets/images/WireFrames.jpg)
-
-
+![Wireframe](assets/images/WireFrames.jpg)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ### Limitations
