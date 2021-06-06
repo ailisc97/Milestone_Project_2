@@ -169,7 +169,7 @@ In the Navigation bar the links should take the user to the correct html page. T
 
 On the Results.html page the form must not be submitted until the required information is inputted into the fields. And an email should be recieved to my personal gamil account. The email template is as seen below.
 
-![Email](asssets/images/EmailTemplate.PNG)
+![Email](assets/images/EmailTemplate.PNG)
 
 Validation of inclusion for all features included in the Structure of the Website / Wireframes must be performed.
 
